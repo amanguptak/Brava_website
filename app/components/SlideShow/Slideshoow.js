@@ -9,7 +9,7 @@ import img5 from "@/public/images/5.png";
 import img6 from "@/public/images/6.png";
 const Slideshoow = () => {
   return (
-    <div>
+    <div className="lg:mt-24 mt-8">
       <div className={styles.slider}>
 <div className={styles.slideTrack}>
 

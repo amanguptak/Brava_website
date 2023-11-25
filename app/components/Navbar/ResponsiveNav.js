@@ -9,8 +9,8 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import { FiShoppingBag } from "react-icons/fi";
-const Navbar = () => {
-  const [open, setOpen] = useState(true);
+const ResponsiveNav = () => {
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(!open);
@@ -85,7 +85,7 @@ const Navbar = () => {
       <div
         className={
           open
-            ? "opacity-100 scale-100  ease-out duration-300 absolute top-0 inset-x-0 mt-[97px] transition transform origin-bottom md:hidden"
+            ? "opacity-100 scale-100  ease-out duration-300 absolute top-0 inset-x-0 mt-[97px] transition transform origin-bottom md:hidden z-10"
             : "opacity-0 scale-0 absolute top-22 inset-x-0 p-2 transition transform origin-bottom  md:hidden"
         }
       >
@@ -121,11 +121,19 @@ const Navbar = () => {
                   href="#"
                   className="-m-3 p-3 flex items-center rounded-md hover:text-gray-300"
                 >
-                  <span className="text-white text-2xl ">become an </span>
+                  <span className="text-white text-2xl ">become an  affiliate</span>
                 </a>
 
                 {/* bottom part of nav */}
 
+
+        <div className="icons">
+<ul className="flex text-lg ">
+<li className='hover:text-[#e1c200]'><FaTwitter /></li>
+       <li className='hover:text-[#e1c200] mx-2'><FaTiktok /></li>
+       <li className='hover:text-[#e1c200] mx-2'><FaInstagram /></li> 
+</ul>
+        </div>
                 {/* <div className="">
         <div className="grid grid-cols-2 gap-y-4 gap-x-8">
           <a
@@ -201,4 +209,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default ResponsiveNav;
