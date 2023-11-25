@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Slideshoow from "./components/SlideShow/Slideshoow"
 import ResponsiveNav from "./components/Navbar/ResponsiveNav"
 import Banner from "./components/Banner/Banner"
-import img1 from '../public/images/C1.png'
+
 export default function Home() {
   let slides = [
     'https://i.postimg.cc/ZKcxz8Fy/C1.png',
