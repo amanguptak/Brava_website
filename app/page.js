@@ -9,7 +9,7 @@ export default function Home() {
 <Announcement/>
 <Navbar/>
 <ResNav/>
-<Slideshoow/>
+{/* <Slideshoow/> */}
 
   </div> 
   )
