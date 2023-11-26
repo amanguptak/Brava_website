@@ -25,7 +25,7 @@ const ResponsiveNav = () => {
               <>
                 <button
                   type="button"
-                  className=" rounded-md p-2 inline-flex items-center justify-center  text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset "
+                  className=" rounded-md p-2 inline-flex items-center justify-center  text-gray-400 focus:outline-none focus:ring-2  "
                   onClick={handleOpen}
                 >
                   {/* close btn */}
@@ -49,7 +49,7 @@ const ResponsiveNav = () => {
             ) : (
               <button
                 type="button"
-                className=" rounded-md p-2 inline-flex items-center justify-center text-white hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:bg-[#212122]"
+                className=" rounded-md p-2 inline-flex items-center justify-center text-white  focus:outline-none focus:ring-2 focus:ring-inset focus:bg-[#212122]"
                 onClick={handleOpen}
               >
                 <svg
@@ -85,7 +85,7 @@ const ResponsiveNav = () => {
       <div
         className={
           open
-            ? "opacity-100 scale-100  ease-out duration-300 absolute top-0 inset-x-0 mt-[97px] transition transform origin-bottom md:hidden z-10"
+            ? "opacity-100 scale-100  ease-out duration-300 absolute top-0 inset-x-0 mt-[97px] transition transform origin-bottom h-screen md:hidden z-10"
             : "opacity-0 scale-0 absolute top-22 inset-x-0 p-2 transition transform origin-bottom  md:hidden"
         }
       >
